@@ -275,13 +275,15 @@ footer {}
 
 #mainHeader {}
 
+#mainContent {}
+
 .logo {}
 
 .mainNav {}
 
 .breadcrumb {}
 
-#content {}
+#articleContent {}
 
 .articleHeader {}
 
@@ -297,11 +299,13 @@ footer {}
 
 .articleThree {}
 
+#descriptionList {}
+
 .descriptionListHead {}
 
 .descriptionListContent {}
 
-#sidebar {}
+#asideSidebar {}
 
 .sidebarTitle {}
 
