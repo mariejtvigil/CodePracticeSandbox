@@ -11,6 +11,7 @@ Description: ???
 - color guide
 - miscellaneous
 - header
+- jumbotron
 - main content
 - aside sidebar content???
 - footer???
@@ -85,7 +86,7 @@ nav {}
 }
 
 
-/* ------ main content ------ */
+/* ------ jumbotron content ------ */
 
 .jumbotron {
     background: url(../images/jumbotron.jpg) no-repeat 50% 0;
@@ -115,3 +116,94 @@ nav {}
 .jumbotronContent .lead {
     font-size: 1.5em;
 }
+
+
+/* ------ main content ------ */
+
+
+/* box content */
+
+.boxOne {
+    font-size: 1em;
+    color: #000000;
+    height: 260px;
+    background: #F2F1EF;
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.boxOne p {
+    margin-bottom: 1.5em;
+}
+
+.boxOne a.readMore {
+    color: #ffffff;
+    background: #95A5A6;
+    margin-bottom: .8em;
+    padding: .8em .8em;
+}
+
+.boxOne a.readMore:hover {
+    color: #000000;
+    background: #D2D7D3;
+}
+
+.boxTwo {
+    font-size: 1em;
+    color: #000000;
+    height: 260px;
+    background: #F2F1EF;
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.boxTwo p {
+    margin-bottom: 1.5em;
+}
+
+.boxTwo a.readMore {
+    color: #ffffff;
+    background: #95A5A6;
+    margin-bottom: .8em;
+    padding: .8em .8em;
+}
+
+.boxTwo a.readMore:hover {
+    color: #000000;
+    background: #D2D7D3;
+}
+
+.boxThree {
+    font-size: 1em;
+    color: #000000;
+    height: 260px;
+    background: #F2F1EF;
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.boxThree p {
+    margin-bottom: 1.5em;
+}
+
+.boxThree a.readMore {
+    color: #ffffff;
+    background: #95A5A6;
+    margin-bottom: .8em;
+    padding: .8em .8em;
+}
+
+.boxThree a.readMore:hover {
+    color: #000000;
+    background: #D2D7D3;
+}
+
+
+/* article content */
+
+.articleContent {}
+
+.
