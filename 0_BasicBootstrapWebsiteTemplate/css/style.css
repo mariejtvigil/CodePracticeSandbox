@@ -53,6 +53,11 @@ nav {}
 
 .navbar {
     border: none;
+    margin-bottom: 0;
+}
+
+.navbar li:hover {
+    background: #ECF0F1;
 }
 
 .navbar .navbar-default {}
@@ -76,8 +81,7 @@ nav {}
 .topBar {
     height: 1em;
     background: #6C7A89;
-    margin-top: -15px;
-    margin-bottom: .05em;
+    margin-bottom: 0;
 }
 
 
@@ -89,8 +93,25 @@ nav {}
     padding: 0;
 }
 
-.jumbotronContent {}
+.jumbotron [class*="col-"] {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, .15);
+    overflow: auto;
+    height: 350px;
+}
 
-.jumbotronContent p {}
+.jumbotronContent {
+    color: #ffffff;
+}
 
-.lead {}
+.jumbotronContent h1 {
+    font-size: 2.3em;
+    border-bottom: #ffffff solid .03em;
+    padding-bottom: .3em;
+}
+
+.jumbotronContent .lead {
+    font-size: 1.5em;
+}
