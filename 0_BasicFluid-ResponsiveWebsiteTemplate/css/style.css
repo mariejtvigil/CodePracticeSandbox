@@ -15,6 +15,7 @@ Description: ???
 - aside sidebar content
 - footer
 - media queries
+- print only_thank you_contact us
 ------ */
 
 
@@ -619,6 +620,13 @@ main blockquote {
 
 .copyRight a:hover {
     color: #ABB7B7;
+}
+
+
+/* print only_thank you_contact us */
+
+#printed-article {
+    display: none;
 }
 
 
