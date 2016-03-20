@@ -7,25 +7,55 @@ Description: ???
 
 
 /* ------ Table of Contents
-- HTML5 Reset
+- HTML5 Reset (add if needed)
 - color guide
-- primary html tags
 - miscellaneous
+- header
 - main content
-- aside sidebar content
-- footer
-- media queries
+- aside sidebar content???
+- footer???
+- media queries???
 ------ */
+
+
+/* ------ color guide
+-
+-
+-
+-
+-
+------ */
+
+
+/* ------ miscellaneous ------ */
+
+.container-fluid {}
+
+.container {}
+
+
+/* ------ general html tags ------ */
+
+html {}
+
+body {}
+
+p {}
+
+a {}
+
+
+/* ------ header ------ */
 
 header {}
 
 nav {}
 
-.navbar {}
+.navbar {
+    border: none;
+}
 
 .navbar .navbar-default {}
-
-.container-fluid {}
 
 .navbar-header {}
 
@@ -43,4 +73,24 @@ nav {}
 
 .dropdown-menu {}
 
-.
+.topBar {
+    height: 1em;
+    background: #6C7A89;
+    margin-top: -15px;
+    margin-bottom: .05em;
+}
+
+
+/* ------ main content ------ */
+
+.jumbotron {
+    background: url(../images/jumbotron.jpg) no-repeat 50% 0;
+    height: 350px;
+    padding: 0;
+}
+
+.jumbotronContent {}
+
+.jumbotronContent p {}
+
+.lead {}
