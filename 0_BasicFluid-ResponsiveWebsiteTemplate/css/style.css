@@ -7,10 +7,14 @@ Description: ???
 
 
 /* ------ Table of Contents
-- ?
-- ?
-- ?
-- ?
+- HTML5 Reset
+- color guide
+- primary html tags
+- miscellaneous
+- main content
+- aside sidebar content
+- footer
+- media queries
 ------ */
 
 
@@ -301,15 +305,32 @@ footer {}
 /* ------ custom ids and classess ------ */
 
 
+/* miscellaneous */
+
+#containerWrap {
+    margin: 0 auto;
+    width: 95%;
+    overflow: auto;
+    clear: both;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+
 /* main header and navigation */
 
 #mainHeader {}
 
-.logo {}
-
-#mainHeader .logo {
-    width: 45%;
-    margin: 1em 0;
+.logo {
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: .5em;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    /* animation */
 }
 
 .mainNav {}
@@ -323,15 +344,18 @@ footer {}
 
 #mainHeader .mainNav ul {
     list-style: none;
+    text-align: center;
+    width: 98%;
     margin: 0;
     padding: 0;
+    margin-bottom: 2em;
 }
 
 #mainHeader .mainNav li {
     color: #ffffff;
     display: inline;
     float: left;
-    margin-right: .09em;
+    margin-right: 3px;
 }
 
 #mainHeader .mainNav li a {
@@ -348,6 +372,13 @@ footer {}
     border-radius: .5em;
 }
 
+.main-header .main-nav li a:hover,
+.main-header .main-nav li a.active {
+    background: #efeadd;
+    color: #781a26;
+    border-radius: 5px;
+}
+
 
 /* main content */
 
@@ -355,6 +386,9 @@ footer {}
     width: 70%;
     float: left;
     overflow: auto;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    /* animation */
 }
 
 .breadcrumbs {}
@@ -414,6 +448,8 @@ main blockquote {
 
 .blockquoteFooter {}
 
+.author {}
+
 #descriptionList {
     background: #ECECEC;
     border-radius: .5em;
@@ -444,11 +480,15 @@ main blockquote {
     color: #ffffff;
 }
 
-.author {}
+
+/* aside sidebar content */
 
 #asideSidebar {
     width: 30%;
     float: left;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    /* animation */
 }
 
 .sidebarBlockOne,
@@ -489,9 +529,8 @@ main blockquote {
 
 .sidebarBlockThree {}
 
-.clearFloat {
-    clear: both;
-}
+
+/* footer */
 
 .returnToTopLink {
     background: url(../images/up.gif) no-repeat right center;
@@ -577,4 +616,160 @@ main blockquote {
 
 .copyRight a:hover {
     color: #ABB7B7;
+}
+
+
+/* ------ media queries ------ */
+
+
+/* tablet/ipad (portrait and landscrape) */
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    #containerWrap {
+        width: 95%;
+    }
+    .logo {
+        width: 45%;
+        display: block;
+        margin-bottom: .5em;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        /* animation */
+    }
+    #mainHeader .mainNav {
+        height: 40px;
+        border-radius: .5em;
+        border: .09em #95A5A6 solid;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+        /* animation */
+    }
+    #mainContent {
+        width: 100%;
+        float: none;
+    }
+    #mainContent #articleContent {
+        margin-right: 0;
+    }
+    #mainContent #descriptionList {
+        margin-right: 0;
+    }
+    #asideSidebar {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* small tablet/mini-ipad (portrait and landscrape) */
+
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+    #containerWrap {
+        width: 95%;
+    }
+    .logo {
+        width: 45%;
+        display: block;
+        margin: auto;
+        margin-bottom: .5em;
+    }
+    .main-header .main-nav {
+        height: auto;
+        border-radius: 5px;
+        border: #c13046 1px solid;
+        display: block;
+        overflow: hidden;
+        width: 99%;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        /* animation */
+    }
+    .main-header .main-nav ul {
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+    .main-header .main-nav li {
+        float: none;
+        display: block;
+        margin-right: 0px;
+        width: 100%;
+        border-bottom: solid #a3293b 1px;
+    }
+    .main-header .main-nav li a {
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    .main-header .main-nav li a:hover,
+    .main-header .main-nav li a.active {
+        display: block;
+    }
+    #mainContent {
+        width: 100%;
+        float: none;
+    }
+    #mainContent #articleContent {
+        margin-right: 0;
+    }
+    #mainContent #descriptionList {
+        margin-right: 0;
+    }
+    #asideSidebar {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* smart phone (portrait and landscrape) */
+
+@media only screen and (min-width: 240px) and (max-width: 568px) {
+    #containerWrap {
+        width: 95%;
+    }
+    .logo {
+        width: 95%;
+        display: block;
+        margin-bottom: .5em;
+    }
+    #mainHeader .mainNav {
+        width: 98%;
+        height: auto;
+        display: block;
+        overflow: hidden;
+    }
+    #mainHeader .mainNav ul {
+        width: 98%;
+        padding: 2% 1%;
+        text-align: center;
+    }
+    #mainHeader .mainNav li {
+        width: 100%;
+        float: none;
+        display: block;
+        margin-right: 0;
+        border-bottom: 1px solid #6C7A89;
+    }
+    #mainHeader .mainNav li a {
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    #mainHeader .mainNav li a:hover,
+    #mainHeader .mainNav li a.active {
+        display: block;
+    }
+    #mainContent {
+        width: 100%;
+        float: none;
+    }
+    #mainContent #articleContent {
+        margin-right: 0;
+    }
+    #mainContent #descriptionList {
+        margin-right: 0;
+    }
+    #asideSidebar {
+        width: 100%;
+        float: none;
+    }
 }
