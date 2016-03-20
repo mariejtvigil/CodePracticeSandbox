@@ -147,6 +147,10 @@ nav {}
 
 /* box content */
 
+.glyphicon {
+    margin-right: .5em;
+}
+
 .boxOne {
     font-size: 1em;
     color: #000000;
@@ -246,3 +250,20 @@ nav {}
 /* sidebar content */
 
 .sideBar {}
+
+
+/* overwrite bootstrap colors on list-group-item*/
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+    background: #95A5A6;
+    border: #95A5A6;
+}
+
+.customContent a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+    background: #ECECEC;
+    border: #6C7A89;
+}
