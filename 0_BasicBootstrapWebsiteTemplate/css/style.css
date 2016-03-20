@@ -58,6 +58,20 @@ Description: ???
     margin-bottom: 1em;
 }
 
+.imageFadeOut {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.imageFadeOut:hover {
+    -webkit-opacity: 0.35;
+    -moz-opacity: 0.35;
+    opacity: 0.35;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
 
 /* ------ general html tags ------ */
 
