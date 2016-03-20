@@ -10,12 +10,20 @@ Description: ???
 - HTML5 Reset (add if needed)
 - color guide
 - miscellaneous
+- general html tags
 - header
-- jumbotron
+- jumbotron content
 - main content
-- aside sidebar content???
+--- box content
+--- panel content
+--- sidebar content
 - footer???
 - media queries???
+------ */
+
+
+/* ------ HTML5 Reset
+... add if needed ...
 ------ */
 
 
@@ -218,10 +226,23 @@ nav {}
 }
 
 
-/* article content */
+/* panel content */
 
 .articleContent {}
 
-.sideBar {}
+.media-body {
+    font-size: 1.2em;
+}
 
-.
+.panel-heading {
+    background: #6C7A89 !important;
+}
+
+.panel-title {
+    color: #ffffff;
+}
+
+
+/* sidebar content */
+
+.sideBar {}
