@@ -11,13 +11,13 @@ Description: ???
 - color guide
 - miscellaneous
 - general html tags
-- header
+- navigation content
 - jumbotron content
 - main content
 --- box content
 --- panel content
 --- sidebar content
-- footer???
+- footer
 - media queries???
 ------ */
 
@@ -77,14 +77,17 @@ Description: ???
 
 html {}
 
-body {}
+body {
+    margin-top: 4.5em;
+    margin-left:
+}
 
 p {}
 
 a {}
 
 
-/* ------ header ------ */
+/* ------ navigation content ------ */
 
 header {}
 
@@ -127,7 +130,15 @@ li.logIn a:hover {
     background: #BFBFBF !important;
 }
 
-li.registerLink a {}
+li.registerLink a {
+    color: #ffffff !important;
+    background: #BDC3C7;
+}
+
+li.registerLink a:hover {
+    color: #000000 !important;
+    background: #BFBFBF !important;
+}
 
 .topBar {
     height: 1em;
@@ -292,4 +303,14 @@ a.list-group-item.active:hover,
 a.list-group-item.active:focus {
     background: #ECECEC;
     border: #6C7A89;
+}
+
+
+/* footer */
+
+.copyRight {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    background: #ECECEC;
 }
