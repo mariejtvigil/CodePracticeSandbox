@@ -117,6 +117,18 @@ nav {}
 
 .dropdown-menu {}
 
+li.logIn a {
+    color: #ffffff !important;
+    background: #95A5A6;
+}
+
+li.logIn a:hover {
+    color: #000000 !important;
+    background: #BFBFBF !important;
+}
+
+li.registerLink a {}
+
 .topBar {
     height: 1em;
     background: #6C7A89;
